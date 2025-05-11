@@ -35,5 +35,5 @@ def test_basket_content(driver, login):
 
     items_names2 = [item.text for item in items2]
 
-    assert "Sauce Labs Backpack" not in items_names2, "Backpack not detected"
-    assert "Sauce Labs Bike Light" not in items_names2, "Bike light not detected"
+    assert "Sauce Labs Backpack" not in items_names2, "Backpack still present in the basket"
+    assert "Sauce Labs Bike Light" not in items_names2, "Bike light still present in the basket"
