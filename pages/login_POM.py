@@ -19,6 +19,6 @@ class LoginPage:
     def enter_password(self, password):
         self.driver.find_element(*self.password_field).send_keys(password)
 
-    def click_logn(self):
+    def click_login(self):
         self.driver.find_element(*self.login_button).click()
         
